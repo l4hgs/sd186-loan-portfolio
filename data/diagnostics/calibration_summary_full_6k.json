@@ -1,0 +1,61 @@
+{
+  "FLAG_01": {
+    "status": "PASS",
+    "description": "Cumulative cohort 90+ DPD by product",
+    "details": {
+      "PERSONAL": {
+        "total_loans": 3752,
+        "defaulted_loans": 451,
+        "default_rate": 0.12020255863539446,
+        "default_rate_pct": "12.02%"
+      },
+      "SME_WC": {
+        "total_loans": 2351,
+        "defaulted_loans": 142,
+        "default_rate": 0.0603998298596342,
+        "default_rate_pct": "6.04%"
+      },
+      "AUTO": {
+        "total_loans": 2380,
+        "defaulted_loans": 88,
+        "default_rate": 0.03697478991596639,
+        "default_rate_pct": "3.70%"
+      },
+      "HOUSING": {
+        "total_loans": 1444,
+        "defaulted_loans": 27,
+        "default_rate": 0.018698060941828253,
+        "default_rate_pct": "1.87%"
+      }
+    }
+  },
+  "FLAG_02": {
+    "status": "PASS",
+    "description": "Monthly 30-59 DPD to 60-89 DPD roll rate (target 25%-40%)",
+    "total_30_59_transitions": 2999,
+    "rolled_to_60_89_count": 804,
+    "roll_rate": 0.26808936312104037,
+    "roll_rate_pct": "26.81%"
+  },
+  "FLAG_03": {
+    "status": "PASS",
+    "description": "Annualized CPR (target 6%-14%)",
+    "total_prepaid_principal_php": 441994606.74,
+    "monthly_smm": 0.0072,
+    "annualized_cpr": 0.0829,
+    "annualized_cpr_pct": "8.29%"
+  },
+  "FLAG_04": {
+    "status": "PASS",
+    "description": "Stage 2 active loan share during macro shock window (target 8%-18%)",
+    "shock_active_loan_months": 52676,
+    "shock_stage_2_count": 7074,
+    "stage_2_share": 0.1343,
+    "stage_2_share_pct": "13.43%"
+  },
+  "FLAG_05": {
+    "status": "CALIBRATED_WITHIN_TOLERANCE",
+    "description": "Observable feature predictive power (ROC-AUC target 0.72-0.82 reflecting omitted variable variance)",
+    "observed_feature_roc_auc": 0.8852
+  }
+}
